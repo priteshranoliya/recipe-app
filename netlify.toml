@@ -1,5 +1,5 @@
 [build]
-  publish = "dist/recipe-app"
+  publish = "dist/recipe-app/browser"
   command = "ng build"
 [[redirects]]
   from = "/*"
