@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+            <h2>Shopping List</h2>
+            <hr>
+            <app-shopping-edit></app-shopping-edit>
+            <hr>
+            <div  id="shoppinListPdf">
+            <table class="table table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th>Ingredient Name</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let ingredient of ingredients; let id = index" 
+                        (click)="onEditItem(id)"
+                        style="cursor: pointer;">
+                        <td>{{ ingredient.name }}</td>
+                        <td>{{ ingredient.amount }}</td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+            <button (click)="generatePDF()" class="btn btn-primary">Download Shopping List PDF</button>         </div>
+    </div>
+</div>

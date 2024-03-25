@@ -1,0 +1,24 @@
+input.ng-invalid.ng-touched,
+textarea.ng-invalid.ng-touched {
+    border: 2px solid #ff6b6b; /* Red border */
+    background-color: #fff0f0; /* Light red background */
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+input.ng-invalid.ng-touched:focus,
+textarea.ng-invalid.ng-touched:focus {
+    border-color: #ff4040; /* Darker red border on focus */
+    outline: none; /* Remove default focus outline */
+}
+
+input.ng-valid.ng-touched,
+textarea.ng-valid.ng-touched {
+    border: 2px solid #b5e7a0; /* Green border for valid inputs */
+    background-color: #eafbea; /* Light green background for valid inputs */
+}
+
+input.ng-valid.ng-touched:focus,
+textarea.ng-valid.ng-touched:focus {
+    border-color: #83d983; /* Darker green border on focus */
+    outline: none; /* Remove default focus outline */
+}
